@@ -10,8 +10,8 @@ func main() {
 	// connect to db
 	var config Config
 	dailyhelper.ReadConfig(dailyhelper.GetCurrentPath(false)+"/config.json", &config)
-	c_db := config.Database
-	g, _ = open(c_db.Host, c_db.Port, c_db.DBName, c_db.User, c_db.Password)
+	cDB := config.Database
+	g, _ = open(cDB.Host, cDB.Port, cDB.DBName, cDB.User, cDB.Password)
 	defer g.Close()
 	migrate(g)
 
