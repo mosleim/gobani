@@ -1,0 +1,550 @@
+{
+  "info": {
+    "_postman_id": "1998c3bf-f7ac-4893-892d-2d7a2928dd38",
+    "name": "bani",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "read_all_profiles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "profile"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "read_one_profiles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/profile/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "profile",
+            "{{id}}"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create_one_profiles",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/profile",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "profile"
+          ],
+          "query": [
+            {
+              "key": "created_at",
+              "value": "47"
+            },
+            {
+              "key": "updated_at",
+              "value": "75"
+            },
+            {
+              "key": "deleted_at",
+              "value": "38"
+            },
+            {
+              "key": "phone",
+              "value": "Emily"
+            },
+            {
+              "key": "address",
+              "value": "Ryan"
+            },
+            {
+              "key": "coordinate",
+              "value": "Christina"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update_one_profiles",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/profile/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "profile",
+            "{{id}}"
+          ],
+          "query": [
+            {
+              "key": "created_at",
+              "value": "47"
+            },
+            {
+              "key": "updated_at",
+              "value": "75"
+            },
+            {
+              "key": "deleted_at",
+              "value": "38"
+            },
+            {
+              "key": "phone",
+              "value": "Emily"
+            },
+            {
+              "key": "address",
+              "value": "Ryan"
+            },
+            {
+              "key": "coordinate",
+              "value": "Christina"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete_one_profiles",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/profile/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "profile",
+            "{{id}}"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "read_all_syakhsuns",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "syakhsun"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "read_one_syakhsuns",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/syakhsun/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "syakhsun",
+            "{{id}}"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create_one_syakhsuns",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/syakhsun",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "syakhsun"
+          ],
+          "query": [
+            {
+              "key": "created_at",
+              "value": "15"
+            },
+            {
+              "key": "updated_at",
+              "value": "88"
+            },
+            {
+              "key": "deleted_at",
+              "value": "44"
+            },
+            {
+              "key": "name",
+              "value": "Anna"
+            },
+            {
+              "key": "aba",
+              "value": "56"
+            },
+            {
+              "key": "ummi",
+              "value": "30"
+            },
+            {
+              "key": "gender",
+              "value": "81"
+            },
+            {
+              "key": "birdday",
+              "value": "25"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update_one_syakhsuns",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/syakhsun/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "syakhsun",
+            "{{id}}"
+          ],
+          "query": [
+            {
+              "key": "created_at",
+              "value": "15"
+            },
+            {
+              "key": "updated_at",
+              "value": "88"
+            },
+            {
+              "key": "deleted_at",
+              "value": "44"
+            },
+            {
+              "key": "name",
+              "value": "Anna"
+            },
+            {
+              "key": "aba",
+              "value": "56"
+            },
+            {
+              "key": "ummi",
+              "value": "30"
+            },
+            {
+              "key": "gender",
+              "value": "81"
+            },
+            {
+              "key": "birdday",
+              "value": "25"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete_one_syakhsuns",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/syakhsun/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "syakhsun",
+            "{{id}}"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "read_all_zawajs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "zawaj"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "read_one_zawajs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/zawaj/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "zawaj",
+            "{{id}}"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create_one_zawajs",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/zawaj",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "zawaj"
+          ],
+          "query": [
+            {
+              "key": "created_at",
+              "value": "45"
+            },
+            {
+              "key": "updated_at",
+              "value": "17"
+            },
+            {
+              "key": "deleted_at",
+              "value": "04"
+            },
+            {
+              "key": "zauj",
+              "value": "20"
+            },
+            {
+              "key": "zaujah",
+              "value": "09"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update_one_zawajs",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/zawaj/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "zawaj",
+            "{{id}}"
+          ],
+          "query": [
+            {
+              "key": "created_at",
+              "value": "45"
+            },
+            {
+              "key": "updated_at",
+              "value": "17"
+            },
+            {
+              "key": "deleted_at",
+              "value": "04"
+            },
+            {
+              "key": "zauj",
+              "value": "20"
+            },
+            {
+              "key": "zaujah",
+              "value": "09"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete_one_zawajs",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{host}}/zawaj/{{id}}",
+          "protocol": "",
+          "host": [
+            "{{host}}"
+          ],
+          "port": "",
+          "path": [
+            "zawaj",
+            "{{id}}"
+          ],
+          "query": []
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "id": "1100e68c-e506-41f3-998b-d5c188e80c19",
+      "key": "host",
+      "value": "localhost:8080",
+      "type": ""
+    },
+    {
+      "id": "1100e68c-e506-41f3-998b-d5c188e80c20",
+      "key": "id",
+      "value": "1",
+      "type": ""
+    }
+  ]
+}
