@@ -1,38 +1,26 @@
 package main
 
-import "github.com/jinzhu/gorm"
-//import _ "github.com/go-sql-driver/mysql"
-import _ "github.com/jinzhu/gorm/dialects/mysql"
-import "time"
-// Syakhsun :
-type Syakhsun struct {
-	*gorm.Model
-	Name string `gorm:"name" json:"name"`
-	Aba  uint16 `gorm:"aba" json:"aba"`
-	Ummi uint16 `gorm:"ummi" json:"ummi"`
-	Gender uint16 `gorm:"gender" json:"gender"`
-	Birdday *time.Time
-}
-
-// Zawaj :
-type Zawaj struct {
-	*gorm.Model
-	Zauj   uint16 `gorm:"zauj" json:"zauj"`
-	Zaujah uint16 `gorm:"zaujah" json:"zaujah"`
-}
-
-// Profile :
-type Profile struct {
-	*gorm.Model
-	Phone string 
-	Address string
-	Coordinate string 
-	
-}
-
+import (
+	"github.com/gin-gonic/gin"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/shouva/dailyhelper"
+)
 
 func main() {
-  db, _ := gorm.Open("mysql", "bani:rawi#123@/bani?charset=utf8&parseTime=True&loc=Local")
-  db.AutoMigrate(&Syakhsun{}, &Zawaj{}, &Profile{})
-  defer db.Close()
+	// connect to db
+	var config Config
+	dailyhelper.ReadConfig(dailyhelper.GetCurrentPath(false)+"/config.json", &config)
+	c_db := config.Database
+	g, _ = open(c_db.Host, c_db.Port, c_db.DBName, c_db.User, c_db.Password)
+	defer g.Close()
+	migrate(g)
+
+	r := gin.New()
+	gin.SetMode(gin.DebugMode)
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"selamat": "malam"})
+	})
+	loadrouter(r)
+	r.Run()
 }

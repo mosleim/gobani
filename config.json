@@ -1,0 +1,9 @@
+{
+    "database" :{
+        "host": "localhost",
+        "port": "3306",
+        "dbname":"bani",
+        "username":"bani",
+        "password":"rawi#123"
+    }
+}
