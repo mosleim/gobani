@@ -16,7 +16,7 @@ type Syakhsun struct {
 	Name      string     `gorm:"column:name" form:"name" json:"name"`
 	Aba       uint16     `gorm:"column:aba" form:"aba" json:"aba"`
 	Ummi      uint16     `gorm:"column:ummi" form:"ummi" json:"ummi"`
-	Gender    uint16     `gorm:"column:gender" form:"gender" json:"gender"`
+	Gender    string     `gorm:"column:gender" form:"gender" json:"gender"`
 	Birdday   *time.Time `gorm:"column:birdday" form:"birdday" json:"birdday"`
 }
 
